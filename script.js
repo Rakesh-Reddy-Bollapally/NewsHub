@@ -1,5 +1,9 @@
-let api_key = "e7d9b9b9cfae4a45b9836e2f60f22a56"
-let url = "https://newsapi.org/v2/everything"
+//let api_key = "e7d9b9b9cfae4a45b9836e2f60f22a56"
+//let url = "https://newsapi.org/v2/everything"
+
+let api_key="f1727d4336d1555a8dd2ad8b16d221d6"
+let url="https://gnews.io/api/v4/search"
+
 let container = document.getElementById("container")
 // const loading = document.getElementById('loading');
 
@@ -13,7 +17,7 @@ let fetchData = async () => {
             container.innerHTML = '';
             
             try {
-                let data = await fetch(`${url}?q=${s_value}&apiKey=${api_key}`)
+                let data = await fetch(`${url}?q=${s_value}&lang=en&country=in&max=100&apikey=${api_key}`)
                 let jsondata = await data.json()
                 console.log(jsondata)
                 if (jsondata.articles.length === 0) {
