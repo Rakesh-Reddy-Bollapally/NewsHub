@@ -61,6 +61,7 @@ let fetchData = async () => {
                     heading.style.fontSize = "20px"
                     heading.style.fontWeight = "600"
                     heading.style.fontFamily = "Winky Rough";
+                    heading.style.marginBottom="20px";
 
 
                     let image = document.createElement("img")
