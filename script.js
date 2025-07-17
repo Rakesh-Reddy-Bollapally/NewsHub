@@ -18,6 +18,7 @@ let fetchData = async () => {
             
             try {
                 let data = await fetch(`${url}?q=${s_value}&lang=en&country=in&max=100&apikey=${api_key}`)
+                console.log(data)
                 let jsondata = await data.json()
                 console.log(jsondata)
                 if (jsondata.articles.length === 0) {
