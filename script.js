@@ -72,6 +72,7 @@ let fetchData = async () => {
                     image.style.marginTop = "0px"
                     image.style.marginBottom = "20px"
                     image.style.borderRadius = "5px"
+                    image.className = "img"
 
                     let newslink = document.createElement("a")
                     newslink.setAttribute("href", article.url)
